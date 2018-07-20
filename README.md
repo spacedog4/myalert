@@ -47,6 +47,7 @@ myAlert(message, classes);
 ```
 
 `message`: The message it is going to show, you can pass an string with html inside.
+
 `classes`: The class for styling the alert, you can pass multiples classes, even a custom class.
 
 #### Default style
@@ -86,7 +87,7 @@ myAlert("This is an <i>warning</i> alert", "myalert-warning");
 ![Danger style](/images/danger.png)
 
 ```
-myAlert("This is an <i>danger</i> alert", "myalert-danger");
+myAlert("This is a <i>danger</i> alert", "myalert-danger");
 ```
 
 #### Custom style
@@ -96,7 +97,7 @@ myAlert("This is an <i>danger</i> alert", "myalert-danger");
 ```
 // js file
 
-myAlert("This is an <i>danger</i> alert", "myalert-custom");
+myAlert("You're at the <b>forest</b>", "myalert-custom");
 ```
 
 ```
@@ -129,7 +130,9 @@ myAlertSaving(saving, message, classes);
 ```
 
 `saving`: The saving status, it can be `true` as default or `false`.
+
 `message`: The message it is going to show, you can pass an string with html inside.
+
 `classes`: The class for styling the alert, you can pass multiples classes, even a custom class.
 
 #### __Show__
