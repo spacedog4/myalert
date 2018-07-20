@@ -30,6 +30,7 @@ import jQuery and the js files
 
 ## __Usage__
 
+* __[Getting Started](#getting-started)__
 * __[myAlert](#myalert-usage)__
 	* __[Default style](#default-style)__
 	* __[Info style](#info-style)__
@@ -41,6 +42,31 @@ import jQuery and the js files
 	* __[Show](#show)__
 	* __[Hide](#hide)__
 	
+#### Getting Started
+
+First of all you need to set where the myAlert element will appear, you can do this just adding an `data-myalert` attribute to an element, like this:
+
+```
+<body>
+    ...
+    <div id="#content" data-myalert>
+    	...
+    </div>
+    ...
+</body>
+```
+
+At the beginning the alert will stack without a limit, so if you want just to show three or four alerts at the most you can set an `data-myalert-max` attribute to the element, like this:
+
+```
+<body>
+    ...
+    <div id="#content" data-myalert data-myalert-max="3">
+    	...
+    </div>
+    ...
+</body>
+```
 
 #### myAlert usage
 
