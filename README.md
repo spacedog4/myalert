@@ -28,19 +28,19 @@ import jQuery and the js files
 
 ## __Usage__
 
-* __[myAlert](#myalert)__
+* __[myAlert](#myalert-usage)__
 	* __[Default style](#default-style)__
 	* __[Info style](#info-style)__
  	* __[Success style](#success-style)__
 	* __[Warning style](#warning-style)__
 	* __[Danger style](#danger-style)__
  	* __[Custom style](#custom-style)__
-* __[Saving](#saving)__
+* __[Saving](#saving-usage)__
 	* __[Show](#show)__
 	* __[Hide](#hide)__
 	
 
-#### myAlert
+#### myAlert usage
 
 ```
 myAlert(message, classes);
@@ -122,7 +122,7 @@ myAlert("This is an <i>danger</i> alert", "myalert-custom");
 }
 ```
 
-#### Saving
+#### Saving usage
 
 ```
 myAlertSaving(saving, message, classes);
