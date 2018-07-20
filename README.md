@@ -25,3 +25,16 @@ import jQuery and the js files
 	<script type="text/javascript" src="js/myalert.min.js"></script>
 </body>
 ```
+
+## Usage
+
+```
+myAlert("This is a default alert");
+```
+
+
+__Default__
+
+```
+myAlert()
+```
