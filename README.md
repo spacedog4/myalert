@@ -28,13 +28,18 @@ import jQuery and the js files
 
 ## Usage
 
-```
-myAlert("This is a default alert");
-```
-
-
 __Default__
 
 ```
-myAlert()
+myAlert("This is a <i>default</i> alert");
 ```
+
+![Default style](/images/default.png)
+
+__Info style__
+
+```
+myAlert("This is an <i>info</i> alert", "myalert-info");
+```
+
+![Default style](/images/info.png)
