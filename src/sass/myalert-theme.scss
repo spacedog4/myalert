@@ -1,0 +1,87 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@include font-face("Open Sans", '../fonts/OpenSans-Regular', normal, normal, ttf);
+@include font-face("Open Sans", '../fonts/OpenSans-Italic', normal, italic, ttf);
+@include font-face("Open Sans", '../fonts/OpenSans-Bold', bold, normal, ttf);
+@include font-face("Open Sans", '../fonts/OpenSans-BoldItalic', bold, italic, ttf);
+
+@import "icons/css/icon-font.css";
+@import "icons/css/icon-font-ie7.css";
+@import "icons/css/icon-font-ie7-codes.css";
+@import "icons/css/icon-font-embedded.css";
+@import "icons/css/icon-font-codes.css";
+@import "icons/css/animation.css";
+
+.myalert-wrapper {
+  width: 200px;
+  font-family: 'Open Sans';
+}
+
+.myalert {
+  background-color: #666;
+  color: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgba(#222, .05);
+  border-left: 4px solid darken(#666, 12);
+  p{
+    margin: 0;
+    font-size: .9rem;
+  }
+  &:hover .myalert-close {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.myalert-close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.myalert-danger {
+  background-color: #E42727;
+  border-color: darken(#E42727, 12);
+}
+.myalert-warning {
+  background-color: #F37C13;
+  border-color: darken(#F37C13, 12);
+}
+.myalert-success {
+  background-color: #03B635;
+  border-color: darken(#03B635, 12);
+}
+.myalert-info {
+  background-color: #2B6CCC;
+  border-color: darken(#2B6CCC, 12);
+}

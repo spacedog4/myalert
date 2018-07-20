@@ -1,0 +1,22 @@
+{
+  "name": "icon-font",
+  "css_prefix_text": "fonticon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "06301c50d89b5d3e651bd07ebd6d7de7",
+      "css": "close",
+      "code": 59395,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
+      "css": "loading",
+      "code": 59444,
+      "src": "fontelico"
+    }
+  ]
+}

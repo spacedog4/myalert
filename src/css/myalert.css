@@ -1,0 +1,78 @@
+@import url(icons/css/icon-font.css);
+@import url(icons/css/icon-font-ie7.css);
+@import url(icons/css/icon-font-ie7-codes.css);
+@import url(icons/css/icon-font-embedded.css);
+@import url(icons/css/icon-font-codes.css);
+@import url(icons/css/animation.css);
+@-webkit-keyframes alert-in {
+  from {
+    left: -25px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@-moz-keyframes alert-in {
+  from {
+    left: -25px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes alert-in {
+  from {
+    left: -25px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.myalert-wrapper {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 999;
+  -webkit-box-sizing: borderbox;
+     -moz-box-sizing: borderbox;
+          box-sizing: borderbox;
+}
+.myalert-wrapper * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.myalert {
+  position: relative;
+  -webkit-animation: alert-in .5s;
+     -moz-animation: alert-in .5s;
+          animation: alert-in .5s;
+  margin-top: 15px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=myalert.css.map */

@@ -1,0 +1,39 @@
+@keyframes alert-in {
+  from {
+    left: -25px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@import "icons/css/icon-font.css";
+@import "icons/css/icon-font-ie7.css";
+@import "icons/css/icon-font-ie7-codes.css";
+@import "icons/css/icon-font-embedded.css";
+@import "icons/css/icon-font-codes.css";
+@import "icons/css/animation.css";
+
+.myalert-wrapper {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  box-sizing: borderbox;
+  *{
+    box-sizing: border-box;
+  }
+}
+
+.myalert {
+  position: relative;
+  animation: alert-in .5s;
+  margin-top: 15px;
+  transition: .3s;
+  overflow: hidden;
+  opacity: 1;
+}
