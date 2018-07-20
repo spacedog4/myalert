@@ -1,4 +1,4 @@
-# myAlert
+# myAlert.js
 myAlert.js is a Javascript and CSS library for creating custom notifications alerts.
 
 __[Demo](https://spacedog4.github.io/myalert/)__
@@ -18,7 +18,7 @@ import the css files, if you prefer you can import just the `myalert.min.css` an
 </head>
 ```
 
-import jQuery and the js files
+import jQuery and the js file
 
 ```
 <body>
