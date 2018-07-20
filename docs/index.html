@@ -14,52 +14,72 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="section">
-      <div id="content" data-myalert data-myalert-max="3">
-        <h1 class="title has-text-centered" style="margin-bottom: 30px">MyAlert.js</h1>
-        <h2 class="subtitle has-text-centered">myAlert.js is a Javascript and CSS library for creating custom notifications alerts</h1>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-narrow">
-            <button class="button is-dark" id="showDefault">Default</button>
+  <section class="hero is-fullheight">
+    <div class="container">
+      <div class="section">
+        <div id="content" data-myalert data-myalert-max="3">
+          <h1 class="title has-text-centered" style="margin-bottom: 30px">MyAlert.js</h1>
+          <h2 class="subtitle has-text-centered">myAlert.js is a Javascript and CSS library for creating custom notifications alerts</h1>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-narrow">
+              <a class="button" href="https://github.com/spacedog4/myalert" target="_blank">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </div>
           </div>
-          <div class="column is-narrow">
-            <button class="button is-info" id="showInfo">Info</button>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-narrow">
+              <button class="button is-dark" id="showDefault">Default</button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-info" id="showInfo">Info</button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-success" id="showSuccess">Success</button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-warning" id="showWarning">Warning</button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-danger" id="showDanger">Danger</button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-dark" id="showCustom">Custom</button>
+            </div>
           </div>
-          <div class="column is-narrow">
-            <button class="button is-success" id="showSuccess">Success</button>
-          </div>
-          <div class="column is-narrow">
-            <button class="button is-warning" id="showWarning">Warning</button>
-          </div>
-          <div class="column is-narrow">
-            <button class="button is-danger" id="showDanger">Danger</button>
-          </div>
-          <div class="column is-narrow">
-            <button class="button is-dark" id="showCustom">Custom</button>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-narrow">
-            <button class="button is-info" id="showSaving">
-              <span class="icon is-small">
-                <i class="fas fa-save"></i>
-              </span>
-              <span>Saving</span>
-            </button>
-          </div>
-          <div class="column is-narrow">
-            <button class="button is-info" id="hideSaving">
-              <span class="icon is-small">
-                <i class="fas fa-save"></i>
-              </span>
-              <span>Not Saving</span>
-            </button>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-narrow">
+              <button class="button is-info" id="showSaving">
+                <span class="icon is-small">
+                  <i class="fas fa-save"></i>
+                </span>
+                <span>Saving</span>
+              </button>
+            </div>
+            <div class="column is-narrow">
+              <button class="button is-info" id="hideSaving">
+                <span class="icon is-small">
+                  <i class="fas fa-save"></i>
+                </span>
+                <span>Not Saving</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>myAlert.js</strong> by <a href="https://github.com/spacedog4">André Luis Monteiro</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+      </div>
+    </footer>
+  </section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/myalert.min.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
