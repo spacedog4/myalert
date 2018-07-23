@@ -165,8 +165,14 @@ myAlertSaving(saving, message, classes);
 
 #### __Show__
 
+![Saving](/images/saving.gif)
+
 ```
 myAlertSaving(true, "Wait, saving...", "myalert-info");
 ```
 
-![Saving](/images/saving.gif)
+#### __Hide__
+
+```
+myAlertSaving(false);
+```
